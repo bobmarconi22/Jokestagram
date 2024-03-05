@@ -1,0 +1,2 @@
+- rickroll (funniest joke)
+- make you own setup/punchline
