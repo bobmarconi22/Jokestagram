@@ -8,9 +8,9 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 200px;
+  height: 150px;
   width: 100%;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 h1 {
@@ -35,14 +35,6 @@ nav a {
   justify-content: space-around;
   align-items: center;
 }
-#prank a {
-  /* border: white solid 2px; */
-  font-size: 20px;
-  text-decoration: none;
-  color: cornsilk;
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
 
 body {
   display: flex;
@@ -66,7 +58,12 @@ body {
 
 #prank:hover {
   cursor: pointer;
-  animation: move 5s;
+  /* animation: move 5s; */
+}
+
+#prank.clicked {
+  /* color: rgba(0, 0, 0, 0.82); */
+  /* animation: move 5s; */
 }
 
 @keyframes move {

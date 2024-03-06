@@ -41,3 +41,12 @@ const clearImg = () => {
   document.getElementById("result").innerHTML = "";
   document.getElementById("punchline").innerText = "";
 };
+
+const audio = new Audio("laughaudio.wav");
+
+const laughTrack = () => {
+  setTimeout(() => {
+    audio.currentTime = 0;
+    audio.play();
+  }, 3750);
+};
