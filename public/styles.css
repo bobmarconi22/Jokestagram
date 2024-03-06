@@ -1,6 +1,10 @@
 html {
-  background-color: rgba(0, 0, 0, 0.82);
+  background-color: rgb(29, 29, 29);
   color: cornsilk;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200px;
+  font-style: normal;
 }
 
 header {
@@ -8,7 +12,7 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 150px;
+  height: 100px;
   width: 100%;
   margin-bottom: 50px;
 }
@@ -56,18 +60,78 @@ body {
   width: 200px;
 } */
 
-#prank:hover {
+button{
+  background-color: rgb(29, 29, 29);
+  border: 1px solid transparent;
+  font-size: 19px;
+  color: cornsilk;
+  padding: 5px;
+}
+
+#prank-1:hover{
   cursor: pointer;
-  /* animation: move 5s; */
 }
 
-#prank:visited {
-  /* display: none; */
-  color: rgba(0, 0, 0, 0.01);
-  /* animation: move 5s; */
+#prank-2{
+  color: rgb(29, 29, 29);
+  margin-right: 500px;
 }
 
-@keyframes move {
+#prank-3{
+  color: rgb(29, 29, 29);
+  margin-right: 1200px;
+}
+
+#prank-4{
+  color: rgb(29, 29, 29);
+}
+
+#prank-5{
+  color: rgb(29, 29, 29);
+}
+
+#prank-6{
+  color: rgb(29, 29, 29);
+  margin-left: 800px;
+}
+
+.div-3-prank{
+  display: flex;
+  justify-content: start;
+}
+
+#prank-1:focus #prank-2:hover{
+  cursor: pointer;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  margin-top: 500px;
+  position: absolute;
+  bottom: 0;
+
+}
+
+footer p{
+  margin-left: 500px;
+  margin-right: 225px;
+  font-size: 10px;
+}
+
+footer a{
+  color: yellow;
+  text-decoration: none;
+  font-size: 10px;
+}
+
+#joke-butt:hover {
+  transform: rotate(360deg);
+  transition: transform 2s; /* Add a smooth transition for the rotation */
+}
+
+
+/* @keyframes move {
   0% {
     transform: translate(0px, 0px);
   }
@@ -77,4 +141,4 @@ body {
   100% {
     transform: translate(0px, 600px);
   }
-}
+} */

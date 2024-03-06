@@ -31,7 +31,7 @@ const printImg = (data) => {
   console.log(num);
   //   console.log(data.photos[num].src.original);
   setTimeout(() => {
-    laughter.setAttribute("src", data.photos[num].src.medium);
+    laughter.setAttribute("src", data.photos[num].src.small);
   }, 3750);
 
   document.getElementById("result").appendChild(laughter);
@@ -50,3 +50,25 @@ const laughTrack = () => {
     audio.play();
   }, 3750);
 };
+
+let count = 1
+const changeColors = (() => {
+  document.getElementById(`prank-${count}`).style.color = 'rgb(29, 29, 29)';
+  count++
+  if(count === 7){
+    count = 1
+    document.getElementById(`prank-${count}`).style.color = 'cornsilk';
+  } else {
+    document.getElementById(`prank-${count}`).style.color = 'yellow';
+  }
+})
+
+let cursorCount = 1
+const changeCursor = (() => {
+  document.getElementById(`prank-${cursorCount}`).style.cursor = 'default';
+  cursorCount++
+  if(cursorCount === 7){
+    cursorCount = 1
+  }
+  document.getElementById(`prank-${cursorCount}`).style.cursor = 'pointer';
+})

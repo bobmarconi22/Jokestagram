@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jokestagram</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
     <script src="index.js"></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -16,21 +22,48 @@
           <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"
             >Click for surprise!</a
           >
-          <a id="prank" href="">The Funniest Joke In The World</a>
+          <button id="prank-1" href="" onclick="moveButton()">
+            The Funniest Joke In The World
+          </button>
         </nav>
       </div>
     </header>
+    <button id="prank-3" class="div-3-prank" href="" onclick="moveButton()">
+      What are you doing?
+    </button>
+    <button id="prank-5" class="div-3-prank" href="" onclick="moveButton()">
+      I Guess Not...
+    </button>
+    <button id="prank-6" class="div-3-prank" href="" onclick="moveButton()">
+      Shame... It was really funny.
+    </button>
+
+
     <a id="joke-butt" type="button" onclick="tellAJoke()">🤣</a>
     <p id="setup"></p>
     <p id="punchline"></p>
     <p id="error"></p>
     <div id="result"></div>
+    <button id="prank-2" href="" onclick="moveButton()">
+        Click for The Funniest Joke In The World
+      </button>
+    <footer>
+
+      <p>Photos provided by <a href="https://www.pexels.com" target="_blank">Pexels</a></p>
+      <button id="prank-4" href="" onclick="moveButton()">
+        Don't you want to hear the Joke?
+      </button>
+    </footer>
     <script>
       function tellAJoke() {
         getJoke();
         getImg();
         clearImg();
         laughTrack();
+      }
+      function moveButton() {
+        changeColors();
+        changeCursor();
       }
     </script>
   </body>
