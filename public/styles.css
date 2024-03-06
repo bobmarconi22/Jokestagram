@@ -35,8 +35,13 @@ nav a {
   justify-content: space-around;
   align-items: center;
 }
-#prank p {
+#prank a {
+  /* border: white solid 2px; */
   font-size: 20px;
+  text-decoration: none;
+  color: cornsilk;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 body {
