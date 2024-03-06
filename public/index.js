@@ -7,30 +7,37 @@ const getJoke = () => {
 const printJoke = (data) => {
   const setup = document.getElementById("setup");
   const punchline = document.getElementById("punchline");
+  console.log(data.type);
 
   setup.innerText = data.setup;
-  punchline.innerText = data.punchline;
+  setTimeout(() => {
+    punchline.innerText = data.punchline;
+  }, 3500);
 };
 
-// document.addEventListener("click", function (event) {
-//   if (!event.target.matches("#button")) return;
-//   fetch("https://official-joke-api.appspot.com/random_joke")
-//     .then((response) => response.json())
-//     .then((data) => sayJoke(data))
-//     .catch(() => sayError());
-// });
+const getImg = () => {
+  fetch("https://api.pexels.com/v1/search?query=peoplelaughing&per_page=70", {
+    headers: {
+      Authorization: "QNNl5HtrmpJHjKhORebWETDoOeznpRfhzRoKAPa2HzLw5Y1rBMXUQMVv",
+    },
+  })
+    .then((res) => res.json())
+    .then((resBody) => printImg(resBody));
+};
 
-// function sayJoke(data) {
-//   const setup = document.getElementById("setup");
-//   const punchline = document.getElementById("punchline");
-//   const error = document.getElementById("error");
-// console.log(data)
-//   error.innerText = "";
-//   setup.innerText = data.setup;
-//   punchline.innerText = data.punchline;
-// }
+const printImg = (data) => {
+  const laughter = document.createElement("img");
+  let num = Math.floor(Math.random() * 70);
+  console.log(num);
+  //   console.log(data.photos[num].src.original);
+  setTimeout(() => {
+    laughter.setAttribute("src", data.photos[num].src.medium);
+  }, 3750);
 
-// function sayError() {
-//   const error = document.getElementById("error");
-//   error.innerText = "Whoops, something went wrong. Please try again later!";
-// }
+  document.getElementById("result").appendChild(laughter);
+};
+
+const clearImg = () => {
+  document.getElementById("result").innerHTML = "";
+  document.getElementById("punchline").innerText = "";
+};

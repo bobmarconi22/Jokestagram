@@ -1,0 +1,23 @@
+html{
+    background-color: rgba(0, 0, 0, 0.82);
+    color: cornsilk;
+}
+
+header{
+    height: 300px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#joke-butt{
+    font-size: 100px;
+}
+
+#joke-butt:hover{
+    cursor: pointer;
+}

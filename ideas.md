@@ -1,2 +1,6 @@
 - rickroll (funniest joke)
 - make you own setup/punchline
+- users add own joke, write own setup, return matching
+- cards against humanity mode
+- search by id
+- flashbang
