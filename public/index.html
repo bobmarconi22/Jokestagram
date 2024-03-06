@@ -8,17 +8,28 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header></header>
+    <header>
+      <h1>Jokes</h1>
+      <nav>
+        <a href="">Jokes</a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"
+          >Click for surprise!</a
+        >
+      </nav>
+      <div id="prank">
+        <p>The Funniest Joke in the world</p>
+      </div>
+    </header>
     <a id="joke-butt" type="button" onclick="tellAJoke()">🤣</a>
     <p id="setup"></p>
     <p id="punchline"></p>
     <p id="error"></p>
     <div id="result"></div>
     <script>
-      function tellAJoke(){
-        getJoke()
-        getImg()
-        clearImg()
+      function tellAJoke() {
+        getJoke();
+        getImg();
+        clearImg();
       }
     </script>
   </body>

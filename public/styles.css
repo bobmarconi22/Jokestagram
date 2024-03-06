@@ -4,7 +4,30 @@ html{
 }
 
 header{
-    height: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 100%;
+    margin-bottom: 200px;
+}
+
+h1{
+    padding-left: 50px;
+    padding-right: 40%;
+}
+
+nav a{
+    justify-content: end;
+    color: cornsilk;
+    padding-right: 25px;
+    text-decoration: none;
+
+}
+
+nav p {
+    padding-right: 25px;
 }
 
 body{
@@ -20,4 +43,23 @@ body{
 
 #joke-butt:hover{
     cursor: pointer;
+}
+
+#prank{
+    height: 50px;
+    width: 200px;
+}
+
+#prank:hover{
+    cursor: pointer;
+    animation: move 1s;
+}
+
+@keyframes move{
+    0%{
+        transform: translate(0px, 0px);
+    }
+    100%{
+        transform: translate(0px, 600px);
+    }
 }
