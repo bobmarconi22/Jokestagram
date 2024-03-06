@@ -5,7 +5,7 @@ html {
   font-optical-sizing: auto;
   font-weight: 200px;
   font-style: normal;
-  max-width: 2000px
+  max-width: 2000px;
   margin: 0 auto;
 }
 
@@ -18,15 +18,20 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   height: 100px;
   width: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
+}
+
+header img {
+  padding-top: 80px;
+  width: 200px;
+  height: auto;
 }
 
 h1 {
   padding-left: 50px;
-  padding-right: 40%;
 }
 
 nav a {
@@ -45,6 +50,8 @@ nav a {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-left: 200px;
+  padding-top: 80px;
 }
 
 body {
@@ -67,7 +74,7 @@ body {
   width: 200px;
 } */
 
-button{
+button {
   background-color: rgb(29, 29, 29);
   border: 1px solid transparent;
   font-size: 19px;
@@ -75,58 +82,57 @@ button{
   padding: 5px;
 }
 
-#prank-1:hover{
+#prank-1:hover {
   cursor: pointer;
 }
 
-#prank-2{
+#prank-2 {
   color: transparent;
   margin-right: 500px;
 }
 
-#prank-3{
+#prank-3 {
   color: transparent;
-  margin-right: 1200px;
+  margin-left: 1200px;
 }
 
-#prank-4{
-  color: transparent;
-}
-
-#prank-5{
+#prank-4 {
   color: transparent;
 }
 
-#prank-6{
+#prank-5 {
+  color: transparent;
+}
+
+#prank-6 {
   color: transparent;
   margin-left: 800px;
 }
 
-.div-3-prank{
+.div-3-prank {
   display: flex;
   justify-content: start;
 }
 
-#prank-1:focus #prank-2:hover{
+#prank-1:focus #prank-2:hover {
   cursor: pointer;
 }
 
-footer{
+footer {
   display: flex;
   justify-content: center;
   margin-top: 500px;
   position: absolute;
   bottom: 0;
-
 }
 
-footer p{
+footer p {
   margin-left: 500px;
   margin-right: 225px;
   font-size: 10px;
 }
 
-footer a{
+footer a {
   color: yellow;
   text-decoration: none;
   font-size: 10px;
@@ -137,7 +143,7 @@ footer a{
   transition: transform 2s; /* Add a smooth transition for the rotation */
 }
 
-#flash{
+#flash {
   font-size: 30px;
 }
 
@@ -158,15 +164,15 @@ footer a{
   }
 } */
 
-@media (max-width: 1300px){
-  #prank-3{
+@media (max-width: 1300px) {
+  #prank-3 {
     color: transparent;
     margin-right: 120px;
   }
-  .topRight{
+  .topRight {
     flex-direction: column;
   }
-  nav{
-    padding: 20px
+  nav {
+    padding: 20px;
   }
 }
