@@ -59,7 +59,7 @@ const changeColors = () => {
   count++;
   if (count === 7) {
     count = 1;
-    document.getElementById(`prank-${count}`).style.color = "cornsilk";
+    document.getElementById(`prank-${count}`).style.color = "rgb(29, 29, 29)";
   } else {
     document.getElementById(`prank-${count}`).style.color = "yellow";
   }
@@ -71,6 +71,8 @@ const changeCursor = () => {
   cursorCount++;
   if (cursorCount === 7) {
     cursorCount = 1;
+    document.getElementById(`prank-${cursorCount}`).style.cursor = "default";
+    return;
   }
   document.getElementById(`prank-${cursorCount}`).style.cursor = "pointer";
 };
@@ -81,9 +83,9 @@ const makeWhite = () => {
     element.classList.add("white-background");
   });
 
-  const prankElements = document.getElementsByClassName('prank');
+  const prankElements = document.getElementsByClassName("prank");
   Array.from(prankElements).forEach((prankElement) => {
-    prankElement.style.color = 'white';
+    prankElement.style.color = "white";
   });
 };
 
@@ -93,29 +95,38 @@ const goBack = () => {
     element.classList.remove("white-background");
   });
 
-  const prankElements = document.getElementsByClassName('prank');
+  const prankElements = document.getElementsByClassName("prank");
   Array.from(prankElements).forEach((prankElement) => {
-    prankElement.style.color = '';
+    prankElement.style.color = "";
   });
 };
 
-const eyesSound = new Audio('myEyes.mp3')
+const eyesSound = new Audio("myEyes.mp3");
 
-const myEyes = (() => {
-  eyesSound.currentTime = 0
+const myEyes = () => {
+  eyesSound.currentTime = 0;
   eyesSound.play();
-})
+};
 
-const ricky = new Audio('rickroll.mp3')
+const ricky = new Audio("rickroll.mp3");
 
-const rickRoll = (() => {
-  ricky.currentTime = 0
+const rickRoll = () => {
+  ricky.currentTime = 0;
   ricky.play();
-})
+};
 
 const rickVid = () => {
   const rickSpot = document.createElement("video");
-    rickSpot.setAttribute("src", );
+  rickSpot.setAttribute("src", "rickroll.mp4");
   document.getElementById("result").appendChild(rickSpot);
   rickSpot.play();
+};
+
+const initiateRick = () => {
+  clear();
+  // rickRoll();
+  rickVid();
+  setTimeout(() => {
+    clear();
+  }, 6300);
 };

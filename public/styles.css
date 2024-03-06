@@ -29,6 +29,11 @@ header img {
   height: auto;
 }
 
+video {
+  height: 400px;
+  width: auto;
+}
+
 h1 {
   padding-left: 50px;
 }
