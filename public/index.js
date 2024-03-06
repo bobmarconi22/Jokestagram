@@ -31,7 +31,7 @@ const printImg = (data) => {
   console.log(num);
   //   console.log(data.photos[num].src.original);
   setTimeout(() => {
-    laughter.setAttribute("src", data.photos[num].src.small);
+    laughter.setAttribute("src", data.photos[num].src.medium);
   }, 3750);
 
   document.getElementById("result").appendChild(laughter);
@@ -42,33 +42,72 @@ const clearImg = () => {
   document.getElementById("punchline").innerText = "";
 };
 
-const audio = new Audio("laughaudio.wav");
+const laugh = new Audio("laughaudio.wav");
 
 const laughTrack = () => {
   setTimeout(() => {
-    audio.currentTime = 0;
-    audio.play();
+    laugh.currentTime = 0;
+    laugh.play();
   }, 3750);
 };
+// need to figure out back to back activations not laughing twice
 
-let count = 1
-const changeColors = (() => {
-  document.getElementById(`prank-${count}`).style.color = 'rgb(29, 29, 29)';
-  count++
-  if(count === 7){
-    count = 1
-    document.getElementById(`prank-${count}`).style.color = 'cornsilk';
+let count = 1;
+const changeColors = () => {
+  document.getElementById(`prank-${count}`).style.color = "rgb(29, 29, 29)";
+  count++;
+  if (count === 7) {
+    count = 1;
+    document.getElementById(`prank-${count}`).style.color = "cornsilk";
   } else {
-    document.getElementById(`prank-${count}`).style.color = 'yellow';
+    document.getElementById(`prank-${count}`).style.color = "yellow";
   }
+};
+
+let cursorCount = 1;
+const changeCursor = () => {
+  document.getElementById(`prank-${cursorCount}`).style.cursor = "default";
+  cursorCount++;
+  if (cursorCount === 7) {
+    cursorCount = 1;
+  }
+  document.getElementById(`prank-${cursorCount}`).style.cursor = "pointer";
+};
+
+const makeWhite = () => {
+  const elements = document.querySelectorAll("*");
+  elements.forEach((element) => {
+    element.classList.add("white-background");
+  });
+
+  const prankElements = document.getElementsByClassName('prank');
+  Array.from(prankElements).forEach((prankElement) => {
+    prankElement.style.color = 'white';
+  });
+};
+
+const goBack = () => {
+  const elements = document.querySelectorAll("*");
+  elements.forEach((element) => {
+    element.classList.remove("white-background");
+  });
+
+  const prankElements = document.getElementsByClassName('prank');
+  Array.from(prankElements).forEach((prankElement) => {
+    prankElement.style.color = '';
+  });
+};
+
+const eyesSound = new Audio('myEyes.mp3')
+
+const myEyes = (() => {
+  eyesSound.currentTime = 0
+  eyesSound.play();
 })
 
-let cursorCount = 1
-const changeCursor = (() => {
-  document.getElementById(`prank-${cursorCount}`).style.cursor = 'default';
-  cursorCount++
-  if(cursorCount === 7){
-    cursorCount = 1
-  }
-  document.getElementById(`prank-${cursorCount}`).style.cursor = 'pointer';
+const ricky = new Audio('rickroll.mp3')
+
+const rickRoll = (() => {
+  ricky.currentTime = 0
+  ricky.play();
 })

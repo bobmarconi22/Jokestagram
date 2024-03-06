@@ -7,6 +7,11 @@ html {
   font-style: normal;
 }
 
+::selection {
+  color: inherit;
+  background: transparent;
+}
+
 header {
   display: flex;
   flex-direction: row;
@@ -73,25 +78,25 @@ button{
 }
 
 #prank-2{
-  color: rgb(29, 29, 29);
+  color: transparent;
   margin-right: 500px;
 }
 
 #prank-3{
-  color: rgb(29, 29, 29);
+  color: transparent;
   margin-right: 1200px;
 }
 
 #prank-4{
-  color: rgb(29, 29, 29);
+  color: transparent;
 }
 
 #prank-5{
-  color: rgb(29, 29, 29);
+  color: transparent;
 }
 
 #prank-6{
-  color: rgb(29, 29, 29);
+  color: transparent;
   margin-left: 800px;
 }
 
@@ -130,6 +135,11 @@ footer a{
   transition: transform 2s; /* Add a smooth transition for the rotation */
 }
 
+
+.white-background {
+  background-color: white;
+  color: white;
+}
 
 /* @keyframes move {
   0% {

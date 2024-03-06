@@ -13,44 +13,47 @@
     <script src="index.js"></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body
+    onload="alert('You have 1,375 viruses! Call 1-800-NOT-SCAM to renew your Norton Anti-Virus subscription')"
+  >
     <header>
       <h1>Jokes</h1>
       <div class="topRight">
         <nav>
-          <a href="">Jokes</a>
-          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"
-            >Click for surprise!</a
+          <a href="#" id="flash" onclick="flashBang()">💡</a>
+          <a href="#" onclick="rickRoll()"
+            >Want Free Money $$$?</a
           >
-          <button id="prank-1" href="" onclick="moveButton()">
+          <button id="prank-1" class="prank" href="" onclick="moveButton()">
             The Funniest Joke In The World
           </button>
         </nav>
       </div>
     </header>
-    <button id="prank-3" class="div-3-prank" href="" onclick="moveButton()">
+    <button id="prank-3" class="prank" href="" onclick="moveButton()">
       What are you doing?
     </button>
-    <button id="prank-5" class="div-3-prank" href="" onclick="moveButton()">
+    <button id="prank-5" class="prank" href="" onclick="moveButton()">
       I Guess Not...
     </button>
-    <button id="prank-6" class="div-3-prank" href="" onclick="moveButton()">
+    <button id="prank-6" class="prank" href="" onclick="moveButton()">
       Shame... It was really funny.
     </button>
-
 
     <a id="joke-butt" type="button" onclick="tellAJoke()">🤣</a>
     <p id="setup"></p>
     <p id="punchline"></p>
     <p id="error"></p>
     <div id="result"></div>
-    <button id="prank-2" href="" onclick="moveButton()">
-        Click for The Funniest Joke In The World
-      </button>
+    <button id="prank-2" class="prank" href="" onclick="moveButton()">
+      Click for The Funniest Joke In The World
+    </button>
     <footer>
-
-      <p>Photos provided by <a href="https://www.pexels.com" target="_blank">Pexels</a></p>
-      <button id="prank-4" href="" onclick="moveButton()">
+      <p>
+        Photos provided by
+        <a href="https://www.pexels.com" target="_blank">Pexels</a>
+      </p>
+      <button id="prank-4" class="prank" href="" onclick="moveButton()">
         Don't you want to hear the Joke?
       </button>
     </footer>
@@ -64,6 +67,13 @@
       function moveButton() {
         changeColors();
         changeCursor();
+      }
+      function flashBang() {
+        makeWhite();
+        myEyes();
+        setTimeout(() => {
+          goBack();
+        }, 2000);
       }
     </script>
   </body>
