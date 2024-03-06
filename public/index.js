@@ -112,3 +112,10 @@ const rickRoll = (() => {
   ricky.currentTime = 0
   ricky.play();
 })
+
+const rickVid = () => {
+  const rickSpot = document.createElement("video");
+    rickSpot.setAttribute("src", );
+  document.getElementById("result").appendChild(rickSpot);
+  rickSpot.play();
+};
