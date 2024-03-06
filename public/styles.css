@@ -1,65 +1,77 @@
-html{
-    background-color: rgba(0, 0, 0, 0.82);
-    color: cornsilk;
+html {
+  background-color: rgba(0, 0, 0, 0.82);
+  color: cornsilk;
 }
 
-header{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    height: 200px;
-    width: 100%;
-    margin-bottom: 200px;
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 100%;
+  margin-bottom: 200px;
 }
 
-h1{
-    padding-left: 50px;
-    padding-right: 40%;
+h1 {
+  padding-left: 50px;
+  padding-right: 40%;
 }
 
-nav a{
-    justify-content: end;
-    color: cornsilk;
-    padding-right: 25px;
-    text-decoration: none;
-
+nav a {
+  justify-content: end;
+  color: cornsilk;
+  padding-right: 25px;
+  text-decoration: none;
+  font-size: 20px;
 }
 
-nav p {
-    padding-right: 25px;
+/* nav p {
+  padding-right: 25px;
+} */
+
+.topRight {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#prank p {
+  font-size: 20px;
 }
 
-body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-#joke-butt{
-    font-size: 100px;
+#joke-butt {
+  font-size: 100px;
 }
 
-#joke-butt:hover{
-    cursor: pointer;
+#joke-butt:hover {
+  cursor: pointer;
 }
 
-#prank{
-    height: 50px;
-    width: 200px;
+/* #prank {
+  height: 50px;
+  width: 200px;
+} */
+
+#prank:hover {
+  cursor: pointer;
+  animation: move 5s;
 }
 
-#prank:hover{
-    cursor: pointer;
-    animation: move 1s;
-}
-
-@keyframes move{
-    0%{
-        transform: translate(0px, 0px);
-    }
-    100%{
-        transform: translate(0px, 600px);
-    }
+@keyframes move {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  5% {
+    transform: translate(0px, 600px);
+  }
+  100% {
+    transform: translate(0px, 600px);
+  }
 }
