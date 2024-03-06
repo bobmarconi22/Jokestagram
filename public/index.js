@@ -37,9 +37,10 @@ const printImg = (data) => {
   document.getElementById("result").appendChild(laughter);
 };
 
-const clearImg = () => {
+const clear = () => {
   document.getElementById("result").innerHTML = "";
   document.getElementById("punchline").innerText = "";
+  document.getElementById("setup").innerText = "";
 };
 
 const laugh = new Audio("laughaudio.wav");

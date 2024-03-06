@@ -14,16 +14,14 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body
-    onload="alert('You have 1,375 viruses! Call 1-800-NOT-SCAM to renew your Norton Anti-Virus subscription')"
+    id="alert('You have 1,375 viruses! Call 1-800-TOTES-NOT-SCAM to renew your Norton Anti-Virus subscription')"
   >
     <header>
       <h1>Jokes</h1>
       <div class="topRight">
         <nav>
           <a href="#" id="flash" onclick="flashBang()">💡</a>
-          <a href="#" onclick="rickRoll()"
-            >Want Free Money $$$?</a
-          >
+          <a href="#" onclick="rickRoll()">Want Free Money $$$?</a>
           <button id="prank-1" class="prank" href="" onclick="moveButton()">
             The Funniest Joke In The World
           </button>
@@ -61,7 +59,7 @@
       function tellAJoke() {
         getJoke();
         getImg();
-        clearImg();
+        clear();
         laughTrack();
       }
       function moveButton() {
@@ -69,6 +67,7 @@
         changeCursor();
       }
       function flashBang() {
+        clear();
         makeWhite();
         myEyes();
         setTimeout(() => {

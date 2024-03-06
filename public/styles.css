@@ -5,6 +5,8 @@ html {
   font-optical-sizing: auto;
   font-weight: 200px;
   font-style: normal;
+  max-width: 2000px
+  margin: 0 auto;
 }
 
 ::selection {
@@ -30,7 +32,7 @@ h1 {
 nav a {
   justify-content: end;
   color: cornsilk;
-  padding-right: 25px;
+  padding: 0 30px;
   text-decoration: none;
   font-size: 20px;
 }
@@ -135,6 +137,9 @@ footer a{
   transition: transform 2s; /* Add a smooth transition for the rotation */
 }
 
+#flash{
+  font-size: 30px;
+}
 
 .white-background {
   background-color: white;
@@ -152,3 +157,16 @@ footer a{
     transform: translate(0px, 600px);
   }
 } */
+
+@media (max-width: 1300px){
+  #prank-3{
+    color: transparent;
+    margin-right: 120px;
+  }
+  .topRight{
+    flex-direction: column;
+  }
+  nav{
+    padding: 20px
+  }
+}
