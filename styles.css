@@ -147,21 +147,21 @@ footer {
 }
 
 footer p {
-  font-size: 10px;
+  font-size: 12px;
   padding-left: 10px;
 }
 
 footer a {
   color: yellow;
-  text-decoration: none;
   font-size: 15px;
   padding: 5px;
+  text-decoration: underline;
 }
 
 .github{
   margin-left: 15px;
-  text-decoration: underline;
   color: cornsilk;
+  text-decoration: none;
 }
 
 .github:hover{
@@ -183,9 +183,20 @@ footer a {
   color: white;
 }
 
-#cookies{
+#cookies {
   display: none;
   flex-direction: column;
+}
+
+#cookies img {
+  width: 200px;
+  height: auto;
+  padding-bottom: 15px;
+  padding-left: 15px;
+}
+
+#cookies > form{
+
   justify-content: center;
   align-items: center;
   padding: 20px;
@@ -197,7 +208,7 @@ footer a {
 }
 
 #cookies p{
-  font-size: 15px;
+  font-size: 18px;
   padding-left: 30px;
   padding-bottom: 15px;
   text-decoration: underline;
@@ -206,7 +217,7 @@ footer a {
 
 #cookies button{
   padding: 5px;
-  margin-left: 50px;
+  margin-left: 70px;
   margin-top: 10px;
   background-color: cornsilk;
   border: none;

@@ -52,6 +52,7 @@
     </button>
     <footer>
       <div id="cookies">
+        <img src="/media/cookiemonsteredit.png" alt="Cookie">
         <form action="">
           <p>Allow Cookies?</p>
           <div>
@@ -99,7 +100,7 @@
             />
             <label for="all-cookies">ALL-DA-COOKIES</label>
           </div>
-          <button onclick="clear()">Submit</button>
+          <button onclick="clearCookies()">Submit</button>
         </form>
       </div>
       <button id="prank-4" class="prank-class" href="" onclick="moveButton()">
@@ -124,6 +125,7 @@
     </footer>
     <script>
       function tellAJoke() {
+        clear();
         getJoke();
         getImg();
         clear();
@@ -154,9 +156,9 @@
       };
 
       function onLoadFunc() {
-        // alert(
-        //   "You have 1,375 viruses! Call 1-800-TOTES-NOT-SCAM to renew your Norton Anti-Virus subscription"
-        // );
+        alert(
+          "You have 1,375 viruses! Call 1-800-TOTES-NOT-SCAM to renew your Norton Anti-Virus subscription"
+        );
         disableAllButts();
         enableNextButt();
       }

@@ -41,6 +41,11 @@ const clear = () => {
   document.getElementById("result").innerHTML = "";
   document.getElementById("punchline").innerText = "";
   document.getElementById("setup").innerText = "";
+  document.getElementById("cookies").style.display = "none";
+};
+
+const clearCookies = () => {
+  document.getElementById("cookies").style.display = "none";
 };
 
 const laugh = new Audio("media/laughaudio.wav");
