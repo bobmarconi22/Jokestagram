@@ -86,7 +86,7 @@ body {
   width: 200px;
 } */
 
-button {
+.prank-class {
   background-color: rgb(29, 29, 29);
   border: 1px solid transparent;
   font-size: 19px;
@@ -99,33 +99,39 @@ button {
 }
 
 #prank-2 {
-  color: transparent;
+  font-size: 0px;
   margin-right: 500px;
+  width: 0px;
+  height: 0px;
 }
 
 #prank-3 {
+  background-color: none;
   color: transparent;
+  font-size: 0px;
   margin-left: 600px;
   margin-top: 10px;
-}
+  }
 
 #prank-4 {
+  background-color: none;
   color: transparent;
+  font-size: 0px;
   margin-right: 500px;
-}
+  }
 
 #prank-5 {
+  background-color: none;
   color: transparent;
-}
+  font-size: 0px;
+  }
 
 #prank-6 {
+  background-color: none;
   color: transparent;
+  font-size: 0px;
   margin-left: 800px;
-}
-
-#prank-1:focus #prank-2:hover {
-  cursor: pointer;
-}
+  }
 
 footer {
   display: flex;

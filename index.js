@@ -56,12 +56,21 @@ const laughTrack = () => {
 let count = 1;
 const changeColors = () => {
   document.getElementById(`prank-${count}`).style.color = "rgb(29, 29, 29)";
+  document.getElementById(`prank-${count}`).style.fontSize = "0";
+  document.getElementById(`prank-${count}`).style.width = "1px";
+  document.getElementById(`prank-${count}`).style.height = "1px";
   count++;
   if (count === 7) {
     count = 1;
     document.getElementById(`prank-${count}`).style.color = "rgb(29, 29, 29)";
+    document.getElementById(`prank-${count}`).style.fontSize = "0";
+    document.getElementById(`prank-${count}`).style.width = "1px";
+    document.getElementById(`prank-${count}`).style.height = "1px";
   } else {
     document.getElementById(`prank-${count}`).style.color = "yellow";
+    document.getElementById(`prank-${count}`).style.fontSize = "20px";
+    document.getElementById(`prank-${count}`).style.width = "400px";
+    document.getElementById(`prank-${count}`).style.height = "auto";
   }
 };
 
@@ -142,6 +151,6 @@ const disableAllButts = () => {
 buttonCount = 1;
 const enableNextButt = () => {
   let nextButt = document.getElementById(`prank-${buttonCount}`);
-    nextButt.disabled = false;
+  nextButt.disabled = false;
   buttonCount++;
 };
