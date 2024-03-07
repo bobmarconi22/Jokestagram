@@ -44,10 +44,6 @@ const clear = () => {
   document.getElementById("cookies").style.display = "none";
 };
 
-const clearCookies = () => {
-  document.getElementById("cookies").style.display = "none";
-};
-
 const laugh = new Audio("media/laughaudio.wav");
 
 const laughTrack = () => {

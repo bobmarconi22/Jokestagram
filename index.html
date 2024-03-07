@@ -100,7 +100,7 @@
             />
             <label for="all-cookies">ALL-DA-COOKIES</label>
           </div>
-          <button onclick="clearCookies()">Submit</button>
+          <button onclick="clearCookies(event)">Submit</button>
         </form>
       </div>
       <button id="prank-4" class="prank-class" href="" onclick="moveButton()">
@@ -168,6 +168,12 @@
         clear();
         showCookies();
       }
+
+      function clearCookies(event){
+        event.preventDefault();
+        clear();
+      }
+
     </script>
   </body>
 </html>
