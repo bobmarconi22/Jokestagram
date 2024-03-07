@@ -101,14 +101,14 @@ const goBack = () => {
   });
 };
 
-const eyesSound = new Audio("myEyes.mp3");
+const eyesSound = new Audio("media/myEyes.mp3");
 
 const myEyes = () => {
   eyesSound.currentTime = 0;
   eyesSound.play();
 };
 
-const ricky = new Audio("rickroll.mp3");
+const ricky = new Audio("media/rickroll.mp3");
 
 const rickRoll = () => {
   ricky.currentTime = 0;
@@ -117,7 +117,7 @@ const rickRoll = () => {
 
 const rickVid = () => {
   const rickSpot = document.createElement("video");
-  rickSpot.setAttribute("src", "rickroll.mp4");
+  rickSpot.setAttribute("src", "media/rickroll.mp4");
   document.getElementById("result").appendChild(rickSpot);
   rickSpot.play();
 };
