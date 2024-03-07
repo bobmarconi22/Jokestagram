@@ -21,7 +21,12 @@
         <nav>
           <a href="#" id="flash" onclick="flashBang()">💡</a>
           <a href="#" onclick="initiateRick()">Want Free Money $$$?</a>
-          <button id="prank-1" class="prank-class" href="" onclick="moveButton()">
+          <button
+            id="prank-1"
+            class="prank-class"
+            href=""
+            onclick="moveButton()"
+          >
             The Funniest Joke In The World
           </button>
         </nav>
@@ -49,6 +54,11 @@
       <button id="prank-4" class="prank-class" href="" onclick="moveButton()">
         Don't you want to hear the Joke?
       </button>
+
+      <a id="cookiesPolicy" href="" onclick="cookieForm()"
+        >View Our Cookie Policy</a
+      >
+
       <p>Support our other projects:</p>
       <a class="github" href="https://github.com/bobmarconi22" target="_blank"
         >Bob Marconi</a
@@ -88,6 +98,11 @@
         );
         disableAllButts();
         enableNextButt();
+      }
+
+      function cookieForm() {
+        clear();
+        activateCookies();
       }
     </script>
   </body>

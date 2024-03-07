@@ -154,3 +154,27 @@ const enableNextButt = () => {
   nextButt.disabled = false;
   buttonCount++;
 };
+
+const cookies = [
+  "Chocolate Chip",
+  "Snicker Doodle",
+  "Oreo",
+  "Hydrox",
+  "Peanut Butter",
+];
+
+const activateCookies = () => {
+  let form = document.createElement("form");
+  form.setAttribute("id", "cookie-form");
+  let option;
+  for (const cookie in cookies) {
+    option = document.createElement("option");
+    option.innerText = cookie;
+    document.getElementById("cookie-form").appendChild(option);
+  }
+  let cookieButton = document.createElement("button");
+  cookieButton.setAttribute("onclick", "clear()");
+  button.innerText = "Allow Cookies";
+  document.getElementById("cookie-form").appendChild(cookieButton);
+  document.getElementById("result").appendChild(form);
+};
