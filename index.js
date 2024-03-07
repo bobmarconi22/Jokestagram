@@ -132,15 +132,6 @@ const rickVid = () => {
   rickSpot.play();
 };
 
-const initiateRick = () => {
-  clear();
-  // rickRoll();
-  rickVid();
-  setTimeout(() => {
-    clear();
-  }, 6300);
-};
-
 const disableAllButts = () => {
   let buttons = document.querySelectorAll(".prank-class");
   buttons.forEach(function (button) {
@@ -155,26 +146,21 @@ const enableNextButt = () => {
   buttonCount++;
 };
 
-const cookies = [
-  "Chocolate Chip",
-  "Snicker Doodle",
-  "Oreo",
-  "Hydrox",
-  "Peanut Butter",
-];
+const showCookies = () => {
+  document.getElementById("cookies").style.display = "flex";
+};
 
-const activateCookies = () => {
-  let form = document.createElement("form");
-  form.setAttribute("id", "cookie-form");
-  let option;
-  for (const cookie in cookies) {
-    option = document.createElement("option");
-    option.innerText = cookie;
-    document.getElementById("cookie-form").appendChild(option);
+const selectAllCookies = () => {
+  let boxes = document.getElementsByClassName("cookie-box");
+  let allCookiesCheckbox = document.getElementById("all-cookies");
+
+  if (allCookiesCheckbox.checked) {
+    for (const box of boxes) {
+      box.checked = true;
+    }
+  } else {
+    for (const box of boxes) {
+      box.checked = false;
+    }
   }
-  let cookieButton = document.createElement("button");
-  cookieButton.setAttribute("onclick", "clear()");
-  button.innerText = "Allow Cookies";
-  document.getElementById("cookie-form").appendChild(cookieButton);
-  document.getElementById("result").appendChild(form);
 };

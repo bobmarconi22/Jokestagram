@@ -14,7 +14,7 @@
     <script src="index.js"></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body onload="onLoad()">
+  <body onload="onLoadFunc()">
     <header>
       <h1><img src="media/jokeslogofinal.png" alt="" /></h1>
       <div class="topRight">
@@ -51,11 +51,62 @@
       Click for The Funniest Joke In The World
     </button>
     <footer>
+      <div id="cookies">
+        <form action="">
+          <p>Allow Cookies?</p>
+          <div>
+            <input type="checkbox" id="cookie1" class="cookie-box" />
+            <label for="cookie1">Chocolate Chip</label>
+          </div>
+          <div>
+            <input type="checkbox" id="cookie2" class="cookie-box" />
+            <label for="cookie2">Snickerdoodle</label>
+          </div>
+          <div>
+            <input type="checkbox" id="cookie3" class="cookie-box" />
+            <label for="cookie3">Oreo</label>
+          </div>
+          <div>
+            <input type="checkbox" id="cookie4" class="cookie-box" />
+            <label for="cookie4">Hydrox</label>
+          </div>
+          <div>
+            <input type="checkbox" id="cookie5" class="cookie-box" />
+            <label for="cookie5">Peanut Butter</label>
+          </div>
+          <div>
+            <input type="checkbox" id="cookie6" class="cookie-box" />
+            <label for="cookie6">Sugar</label>
+          </div>
+          <div>
+            <input type="checkbox" id="cookie7" class="cookie-box" />
+            <label for="cookie7">Wafer</label>
+          </div>
+          <div>
+            <input type="checkbox" id="cookie8" class="cookie-box" />
+            <label for="cookie8">Oatmeal Raisin</label>
+          </div>
+          <div>
+            <input type="checkbox" id="cookie9" class="cookie-box" />
+            <label for="cookie9">Peanut Butter</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              id="all-cookies"
+              onchange="selectAllCookies()"
+              class="cookie-box-2"
+            />
+            <label for="all-cookies">ALL-DA-COOKIES</label>
+          </div>
+          <button onclick="clear()">Submit</button>
+        </form>
+      </div>
       <button id="prank-4" class="prank-class" href="" onclick="moveButton()">
         Don't you want to hear the Joke?
       </button>
 
-      <a id="cookiesPolicy" href="" onclick="cookieForm()"
+      <a id="cookiesPolicy" href="#" onclick="cookieForm(event)"
         >View Our Cookie Policy</a
       >
 
@@ -92,17 +143,28 @@
           goBack();
         }, 2000);
       }
-      function onLoad() {
-        alert(
-          "You have 1,375 viruses! Call 1-800-TOTES-NOT-SCAM to renew your Norton Anti-Virus subscription"
-        );
+
+      const initiateRick = () => {
+        clear();
+        // rickRoll();
+        rickVid();
+        setTimeout(() => {
+          clear();
+        }, 6300);
+      };
+
+      function onLoadFunc() {
+        // alert(
+        //   "You have 1,375 viruses! Call 1-800-TOTES-NOT-SCAM to renew your Norton Anti-Virus subscription"
+        // );
         disableAllButts();
         enableNextButt();
       }
 
-      function cookieForm() {
+      function cookieForm(event) {
+        event.preventDefault();
         clear();
-        activateCookies();
+        showCookies();
       }
     </script>
   </body>
