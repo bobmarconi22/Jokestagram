@@ -43,7 +43,7 @@ const clear = () => {
   document.getElementById("setup").innerText = "";
 };
 
-const laugh = new Audio("laughaudio.wav");
+const laugh = new Audio("media/laughaudio.wav");
 
 const laughTrack = () => {
   setTimeout(() => {
@@ -72,6 +72,7 @@ const changeCursor = () => {
   if (cursorCount === 7) {
     cursorCount = 1;
     document.getElementById(`prank-${cursorCount}`).style.cursor = "default";
+    disableAllButts();
     return;
   }
   document.getElementById(`prank-${cursorCount}`).style.cursor = "pointer";
@@ -129,4 +130,18 @@ const initiateRick = () => {
   setTimeout(() => {
     clear();
   }, 6300);
+};
+
+const disableAllButts = () => {
+  let buttons = document.querySelectorAll(".prank-class");
+  buttons.forEach(function (button) {
+    button.disabled = true;
+  });
+};
+
+buttonCount = 1;
+const enableNextButt = () => {
+  let nextButt = document.getElementById(`prank-${buttonCount}`);
+    nextButt.disabled = false;
+  buttonCount++;
 };

@@ -14,28 +14,26 @@
     <script src="index.js"></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body
-    onload="alert('You have 1,375 viruses! Call 1-800-TOTES-NOT-SCAM to renew your Norton Anti-Virus subscription')"
-  >
+  <body onload="onLoad()">
     <header>
       <h1><img src="media/jokeslogofinal.png" alt="" /></h1>
       <div class="topRight">
         <nav>
           <a href="#" id="flash" onclick="flashBang()">💡</a>
           <a href="#" onclick="initiateRick()">Want Free Money $$$?</a>
-          <button id="prank-1" class="prank" href="" onclick="moveButton()">
+          <button id="prank-1" class="prank-class" href="" onclick="moveButton()">
             The Funniest Joke In The World
           </button>
         </nav>
       </div>
     </header>
-    <button id="prank-3" class="prank" href="" onclick="moveButton()">
+    <button id="prank-3" class="prank-class" href="" onclick="moveButton()">
       What are you doing?
     </button>
-    <button id="prank-5" class="prank" href="" onclick="moveButton()">
+    <button id="prank-5" class="prank-class" href="" onclick="moveButton()">
       I Guess Not...
     </button>
-    <button id="prank-6" class="prank" href="" onclick="moveButton()">
+    <button id="prank-6" class="prank-class" href="" onclick="moveButton()">
       Shame... It was really funny.
     </button>
 
@@ -44,11 +42,11 @@
     <p id="punchline"></p>
     <p id="error"></p>
     <div id="result"></div>
-    <button id="prank-2" class="prank" href="" onclick="moveButton()">
+    <button id="prank-2" class="prank-class" href="" onclick="moveButton()">
       Click for The Funniest Joke In The World
     </button>
     <footer>
-      <button id="prank-4" class="prank" href="" onclick="moveButton()">
+      <button id="prank-4" class="prank-class" href="" onclick="moveButton()">
         Don't you want to hear the Joke?
       </button>
       <a class="github" href="https://github.com/bobmarconi22" target="_blank"
@@ -71,6 +69,8 @@
       }
       function moveButton() {
         changeColors();
+        disableAllButts();
+        enableNextButt();
         changeCursor();
       }
       function flashBang() {
@@ -80,6 +80,13 @@
         setTimeout(() => {
           goBack();
         }, 2000);
+      }
+      function onLoad() {
+        // alert(
+          // "You have 1,375 viruses! Call 1-800-TOTES-NOT-SCAM to renew your Norton Anti-Virus subscription"
+        // );
+        disableAllButts();
+        enableNextButt();
       }
     </script>
   </body>

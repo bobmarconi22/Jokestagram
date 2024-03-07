@@ -73,6 +73,14 @@ body {
   cursor: pointer;
 }
 
+#setup{
+  font-size: 30px;
+}
+
+#punchline{
+  font-size: 45px;
+}
+
 /* #prank {
   height: 50px;
   width: 200px;
@@ -113,11 +121,6 @@ button {
 #prank-6 {
   color: transparent;
   margin-left: 800px;
-}
-
-.div-3-prank {
-  display: flex;
-  justify-content: start;
 }
 
 #prank-1:focus #prank-2:hover {
