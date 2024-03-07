@@ -103,6 +103,7 @@ button {
 
 #prank-4 {
   color: transparent;
+  margin-right: 500px;
 }
 
 #prank-5 {
@@ -125,23 +126,38 @@ button {
 
 footer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  width: 100%;
+  align-items: center;
   margin-top: 500px;
   position: absolute;
   bottom: 0;
+  left: 0;
   z-index: -1;
 }
 
 footer p {
-  margin-left: 500px;
-  margin-right: 225px;
   font-size: 10px;
+  padding-left: 10px;
 }
 
 footer a {
   color: yellow;
   text-decoration: none;
-  font-size: 10px;
+  font-size: 15px;
+  padding: 5px;
+}
+
+.github{
+  margin-left: 15px;
+  text-decoration: underline;
+  color: cornsilk;
+}
+
+.github:hover{
+  color: yellow;
+  cursor: pointer;
 }
 
 #joke-butt:hover {
