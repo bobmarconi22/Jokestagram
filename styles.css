@@ -188,11 +188,11 @@ footer a {
   flex-direction: column;
 }
 
-#cookies img {
+#cookie-monster-img {
   width: 200px;
   height: auto;
   padding-bottom: 15px;
-  padding-left: 15px;
+  padding-left: 20px;
 }
 
 #cookies > form{
@@ -209,10 +209,15 @@ footer a {
 
 #cookies p{
   font-size: 18px;
-  padding-left: 30px;
+  padding-left: 37px;
   padding-bottom: 15px;
   text-decoration: underline;
   color: yellow;
+}
+
+#cookies a {
+  font-size: 15px;
+  text-decoration: underline;
 }
 
 #cookies button{

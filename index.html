@@ -52,9 +52,9 @@
     </button>
     <footer>
       <div id="cookies">
-        <img src="/media/jokeslogofinal.png" alt="Cookie">
+        <img src="./media/cookiemonster.png" alt="" id="cookie-monster-img" />
         <form action="">
-          <p>Allow Cookies?</p>
+          <p><b>Allow Cookies?</b></p>
           <div>
             <input type="checkbox" id="cookie1" class="cookie-box" />
             <label for="cookie1">Chocolate Chip</label>
@@ -66,14 +66,6 @@
           <div>
             <input type="checkbox" id="cookie3" class="cookie-box" />
             <label for="cookie3">Oreo</label>
-          </div>
-          <div>
-            <input type="checkbox" id="cookie4" class="cookie-box" />
-            <label for="cookie4">Hydrox</label>
-          </div>
-          <div>
-            <input type="checkbox" id="cookie5" class="cookie-box" />
-            <label for="cookie5">Peanut Butter</label>
           </div>
           <div>
             <input type="checkbox" id="cookie6" class="cookie-box" />
@@ -90,6 +82,19 @@
           <div>
             <input type="checkbox" id="cookie9" class="cookie-box" />
             <label for="cookie9">Peanut Butter</label>
+          </div>
+          <div>
+            <input type="checkbox" id="cookie5" class="cookie-box" />
+            <label for="cookie5">Peanut Butter</label>
+          </div>
+          <div>
+            <input type="checkbox" id="cookie4" class="cookie-box" />
+            <label for="cookie4"
+              >Hydrox
+              <a href="https://en.wikipedia.org/wiki/Hydrox" target="_blank"
+                ><i>What's Hydrox?</i></a
+              ></label
+            >
           </div>
           <div>
             <input
@@ -156,9 +161,9 @@
       };
 
       function onLoadFunc() {
-        alert(
-          "You have 1,375 viruses! Call 1-800-TOTES-NOT-SCAM to renew your Norton Anti-Virus subscription"
-        );
+        // alert(
+        //   "You have 1,375 viruses! Call 1-800-TOTES-NOT-SCAM to renew your Norton Anti-Virus subscription"
+        // );
         disableAllButts();
         enableNextButt();
       }
@@ -169,11 +174,10 @@
         showCookies();
       }
 
-      function clearCookies(event){
+      function clearCookies(event) {
         event.preventDefault();
         clear();
       }
-
     </script>
   </body>
 </html>
